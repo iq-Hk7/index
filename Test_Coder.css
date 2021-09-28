@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: gainsboro;
+}
+header{
+    width: 70%;
+    height: 70px;
+    background: black;
+    float: left;
+}
+header a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 15pt;
+    display: block;
+    width: 100%;
+    padding: 0% 0%;
+
+}
+li{
+    float: left;
+    line-height: 70px;
+    list-style: none;
+    width: 33.3%;
+    text-align: center;
+}
+header a:hover{
+    background: white;
+    color: black;
+    font-size: 15pt;
+}
+nav{
+    width: 30%;
+    height: 70px;
+    float: right;
+
+    animation-name: chnav;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    float: right;
+}
+@keyframes chnav{
+    0%{
+        background: chartreuse;
+   }
+   
+   50%{
+    background: cornflowerblue;
+   }
+}
+nav h3{
+    color: aliceblue;
+    line-height: 70px;
+    margin-left: 15px;
+    float: left;
+}
+nav img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: right;
+    margin: 15px 10px;
+}
+
+aside{
+    width: 35%;
+    height: 450px;
+    background: white;
+    float: left;
+}
+
+#asidecontent{
+   text-align: center;
+   margin-right: 0px; 
+}
+
+.imgcontent{
+    width: 50px;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 0px;
+}
+.imgcontent:hover{
+    border-bottom: 5px solid green;
+    margin-bottom: 5px;
+}
+
+p{
+    text-align: center;
+    border-bottom: 2px solid gold;
+    padding-bottom: 5px;
+}
+#asideimg{
+     width: 90%;
+     padding: 0.5% 5%;
+}
+
+main{
+    width: 65%;
+    height: 450px;
+    background: white;
+    float: right;
+    display: flex;
+    justify-content: center;
+
+    animation-name: chmain;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    float: right;
+}
+@keyframes chmain{
+    0%{
+        background: blue;
+   }
+   
+   50%{
+    background: blueviolet;
+   }
+}
+#idmaim{
+    width: 60%;
+    height: 200px;
+    background: white;
+    text-align: center;
+    margin-top: 120px;
+    padding: 10px;
+    text-align: center;
+}
+h3{
+    padding: 5px 0px;
+    border-bottom: 2px solid gold;
+}
+#divtext{
+    width: 50%;
+    height: 60px;
+    margin: 10% 35%;
+    font-size: 10pt;
+    display: flex;
+    position:relative;
+
+}
+#one b{
+    float: left;
+    width: 100%;
+    height: 60px;
+    direction: ltr;
+    text-decoration: none;
+}
+#two {
+    float: right;
+    width: 10%;
+    height: 10%;
+
+}
+
+footer{
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    background: burlywood;
+    clear: both;
+    text-align: center;
+}
+section{
+    margin: auto;
+    display: block;
+    width: 70%;
+    height: 95%;
+}
+.footerimg{
+    margin-top: 1%;
+    width: 32%;
+    margin-right: 1%;
+    float: right;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    nav h3{
+        margin-top: 20px;
+        line-height: normal;
+        border: 0px;
+        margin-left: 20px;
+    }
+    nav img{
+        margin-right: 20px;
+    }
+    footer{
+
+    }
+    .footerimg{
+        margin-top: 2.5%;
+        width: 40%;
+        margin-right: 6.5%;
+    }
+} 
+
+@media screen and (max-width: 500px) {
+    header a{
+        font-size: 10pt;
+    }
+    header a:hover{
+
+        font-size: 10pt;
+}
+
+nav h3{
+    font-size: 12pt;
+    margin-top: 20px;
+    line-height: normal;
+    border: 0px;
+}
+nav img{
+    margin: 15px 6px;
+}
+#divtext{
+    position: relative;
+    right: 25%;
+    top: 21%;
+}
+.footerimg{
+    margin-top: 2%;
+    width: 45%;
+    margin-right: 4%;
+}
+}
+
+@media screen and (min-width: 375px) {
+
+nav h3{
+    font-size: 10pt;
+    margin-left: 10px;
+}
+nav img{
+    margin: 15px 10px;
+}
+}
+
+
+
+
